@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">M Coffee</string>
+    <string name="user">User :</string>
+    <string name="password">Password :</string>
 </resources>
