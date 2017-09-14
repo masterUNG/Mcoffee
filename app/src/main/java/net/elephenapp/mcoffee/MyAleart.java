@@ -16,7 +16,7 @@ public class MyAleart {
         this.context = context;
     }
 
-    public void myDialog(String strTitle, String strMessage){
+    public void myDialog(String strTitle, String strMessage) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setCancelable(false);
         builder.setIcon(R.mipmap.ic_name);
