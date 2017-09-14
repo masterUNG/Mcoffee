@@ -102,7 +102,7 @@ public class RegisterFragment extends Fragment{
         OkHttpClient OkHttpClient = new OkHttpClient();
         RequestBody requestBody = new FormEncodingBuilder()
                 .add("isAdd", "true")
-                .add("name", strName)
+                .add("name", nameEditText)
                 .add("sername",strSName)
                 .add("user", strUser)
                 .add("password",strPassword)
