@@ -100,9 +100,9 @@ public class RegisterFragment extends Fragment{
     private void regisMenber(){
         String strURL = "http://infobizplus.com/R2P/php/appMemberRegis.php";
         OkHttpClient OkHttpClient = new OkHttpClient();
-        RequestBody requestBody = new FormEncodingBuilder()
+        RequestBody RequestBody = new FormEncodingBuilder()
                 .add("isAdd", "true")
-                .add("name", nameEditText)
+                .add("name", edtName)
                 .add("sername",strSName)
                 .add("user", strUser)
                 .add("password",strPassword)

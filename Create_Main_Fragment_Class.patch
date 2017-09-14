@@ -1,0 +1,132 @@
+Index: app/src/main/java/net/elephenapp/mcoffee/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/net/elephenapp/mcoffee/MainActivity.java	(revision b48903399b6d0ff5fe892aef5b191f108b2151dc)
++++ app/src/main/java/net/elephenapp/mcoffee/MainActivity.java	(revision )
+@@ -9,5 +9,15 @@
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
++
++        //Add Fragment to Activity
++        if (savedInstanceState==null) {
++            MainFragment mainFragment = new MainFragment();
++            getSupportFragmentManager().beginTransaction()
++                    .add(R.id.maincontent,mainFragment)
++                    .commit();
+-    }
++        }
+-}
++
++
++    }  //Main Method
++}  //Main class
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/Project_Default.xml	(revision )
++++ .idea/inspectionProfiles/Project_Default.xml	(revision )
+@@ -0,0 +1,10 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="AndroidLintNewApi" enabled="false" level="ERROR" enabled_by_default="false" />
++    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
++      <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
++      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
++    </inspection_tool>
++  </profile>
++</component>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/profiles_settings.xml	(revision )
++++ .idea/inspectionProfiles/profiles_settings.xml	(revision )
+@@ -0,0 +1,7 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="PROJECT_PROFILE" value="Project Default" />
++    <option name="USE_PROJECT_PROFILE" value="true" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision b48903399b6d0ff5fe892aef5b191f108b2151dc)
++++ app/build.gradle	(revision )
+@@ -1,8 +1,8 @@
+ apply plugin: 'com.android.application'
+ 
+ android {
+-    compileSdkVersion 25
+-    buildToolsVersion "25.0.3"
++    compileSdkVersion 26
++    buildToolsVersion '26.0.0'
+     defaultConfig {
+         applicationId "net.elephenapp.mcoffee"
+         minSdkVersion 19
+@@ -20,11 +20,12 @@
+ }
+ 
+ dependencies {
+-    compile fileTree(dir: 'libs', include: ['*.jar'])
++    compile fileTree(include: ['*.jar'], dir: 'libs')
+     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+         exclude group: 'com.android.support', module: 'support-annotations'
+     })
+-    compile 'com.android.support:appcompat-v7:25.3.1'
+     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+     testCompile 'junit:junit:4.12'
++    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
++    compile 'com.android.support:support-v4:26.0.0-alpha1'
+ }
+Index: app/src/main/java/net/elephenapp/mcoffee/MainFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/net/elephenapp/mcoffee/MainFragment.java	(revision )
++++ app/src/main/java/net/elephenapp/mcoffee/MainFragment.java	(revision )
+@@ -0,0 +1,31 @@
++package net.elephenapp.mcoffee;
++
++import android.os.Bundle;
++import android.support.annotation.Nullable;
++import android.support.v4.app.Fragment;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
++/**
++ * Created by Bowon on 10/7/2560.
++ */
++
++public class MainFragment extends Fragment{
++
++    public static MainFragment mainInstant(){
++        MainFragment mainFragment = new MainFragment();
++        Bundle bubdle = new Bundle();
++        mainFragment.setArguments(bubdle);
++        return mainFragment;
++    }
++
++    @Nullable
++    @Override
++    public View onCreateView(LayoutInflater inflater,
++                             @Nullable ViewGroup container,
++                             @Nullable Bundle savedInstanceState) {
++        View view = inflater.inflate(R.layout.main_fragment_layout, container, false);
++        return view;
++    }
++}   //Main Class
