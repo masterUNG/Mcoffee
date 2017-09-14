@@ -88,7 +88,7 @@ public class RegisterFragment extends Fragment{
 
                 } else {
                     //No Space
-                    regisMenber();
+                    regisMenber(strName, strSName, strUser, strPassword);
                 }
 
             }
@@ -97,12 +97,12 @@ public class RegisterFragment extends Fragment{
 
     }//End Save Controller
 
-    private void regisMenber(){
+    private void regisMenber(String strName, String strSName, String strUser, String strPassword){
         String strURL = "http://infobizplus.com/R2P/php/appMemberRegis.php";
         OkHttpClient OkHttpClient = new OkHttpClient();
         RequestBody RequestBody = new FormEncodingBuilder()
                 .add("isAdd", "true")
-                .add("name", edtName)
+                .add("name", strName)
                 .add("sername",strSName)
                 .add("user", strUser)
                 .add("password",strPassword)
@@ -119,7 +119,7 @@ public class RegisterFragment extends Fragment{
             @Override
             public void onResponse(Response response) throws IOException {
                 try {
-                    finish();
+                    getActivity().finish();
                 } catch (Exception e){
                     Log.d("M COFFEE","error " + e.toString());
                 }
