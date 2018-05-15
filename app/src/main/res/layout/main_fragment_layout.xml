@@ -73,6 +73,14 @@
                 android:textColorHint="@color/colorPrimaryLight" />
         </LinearLayout>
 
+        <!--Save User And Password-->
+        <CheckBox
+            android:id="@+id/checkboxSave"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="Save User And Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <!--New Register-->
         <TextView
             android:id="@+id/txtNewRegister"

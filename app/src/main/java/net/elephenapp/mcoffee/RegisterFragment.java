@@ -119,7 +119,14 @@ public class RegisterFragment extends Fragment{
             @Override
             public void onResponse(Response response) throws IOException {
                 try {
-                    getActivity().finish();
+
+                    String resultString = response.body().string();
+                    Log.d("M COFFEE", "Response ==> " + resultString);
+
+                    getActivity().getSupportFragmentManager().popBackStack();
+
+
+                   // getActivity().finish();
                 } catch (Exception e){
                     Log.d("M COFFEE","error " + e.toString());
                 }
