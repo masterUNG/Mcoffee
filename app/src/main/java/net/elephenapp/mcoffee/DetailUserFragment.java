@@ -13,9 +13,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 public class DetailUserFragment extends Fragment {
 
-    private String midString;
+    private String midString, nameString, surnameString, emailString, balanceString;
     private ImageView avataImageView;
     private EditText nameEditText, surnameEditText, emailEditText;
     private TextView balanceTextView;
@@ -56,6 +59,18 @@ public class DetailUserFragment extends Fragment {
             String jsonString = getUserWhereMid.get();
             Log.d("1JuneV1", "JSoN ==> " + jsonString);
 
+            JSONArray jsonArray = new JSONArray(jsonString);
+            JSONObject jsonObject = jsonArray.getJSONObject(0);
+
+            nameString = jsonObject.getString("name");
+            surnameString = jsonObject.getString("sername");
+            emailString = jsonObject.getString("email");
+            balanceString = jsonObject.getString("balance");
+
+            nameEditText.setText(nameString);
+            surnameEditText.setText(surnameString);
+            emailEditText.setText(emailString);
+            balanceTextView.setText(balanceString);
 
         } catch (Exception e) {
             e.printStackTrace();
