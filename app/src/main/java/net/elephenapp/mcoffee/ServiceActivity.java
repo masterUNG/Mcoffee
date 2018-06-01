@@ -69,6 +69,9 @@ public class ServiceActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("This is Title");
         getSupportActionBar().setSubtitle(jsonString);
 
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
     }
