@@ -17,7 +17,7 @@ public class ServiceActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private DrawerLayout drawerLayout;
-    private String jsonString;
+    private String midString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,24 @@ public class ServiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_service);
 
 //        Get Value From Intent
-        jsonString = getIntent().getStringExtra("mid");
+        midString = getIntent().getStringExtra("mid");
 
 //        Create Toolbar
         createToolbar();
 
+//        Add MenuDrawerFragment and DetailUserFragment
+        if (savedInstanceState == null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.contentMenuDrawer, new MenuDrawerFragment())
+                    .commit();
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.contentServiceFragment, DetailUserFragment.detailUserInstance(midString))
+                    .commit();
+
+        }
 
     }   // Main Method
 
@@ -86,7 +99,7 @@ public class ServiceActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setTitle("This is Title");
-        getSupportActionBar().setSubtitle(jsonString);
+        getSupportActionBar().setSubtitle(midString);
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

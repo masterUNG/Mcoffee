@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Red-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Blue Good-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--Red-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Blue Good-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--Red-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Blue Good-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--Red-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Blue Good-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+        <!--Blue-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imvPrivate12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_private" />
+
+            <!--Title-->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imvPrivate12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
